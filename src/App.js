@@ -11,11 +11,14 @@ class App extends React.Component {
 				handle=".handle"
 				defaultPosition={{ x: 0, y: 0 }}
 				position={null}
-				grid={[25, 25]}
+				grid={[100, 25]}
 				scale={1}
 				onStart={this.handleStart}
 				onDrag={this.handleDrag}
 				onStop={this.handleStop}
+				bounds={{ left: 0, top: 0, right: 500, bottom: 500 }}
+				defaultClassNameDragged="dragged"
+				defaultClassNameDragging="dragging"
 			>
 				<div className="App">
 					<div className="handle">Drag from here</div>
